@@ -68,6 +68,10 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] rails (v3.0.3, /Users/jreddy/.rvm/gems/ruby-1.9.2-p0@rails30/gems/rails-3.0.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] abstract (v1.0.0, /Users/jreddy/.rvm/gems/ruby-1.9.2-p0@rails30/gems/abstract-1.0.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] mysql2 (v0.2.6, /Users/jreddy/.rvm/gems/ruby-1.9.2-p0@rails30/gems/mysql2-0.2.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mysql (v2.8.1, /Users/jreddy/.rvm/gems/ruby-1.9.2-p0@rails30/gems/mysql-2.8.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] jquery-rails (v0.2.6, /Users/jreddy/.rvm/gems/ruby-1.9.2-p0@rails30/gems/jquery-rails-0.2.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] kaminari (v0.10.4, /Users/jreddy/.rvm/gems/ruby-1.9.2-p0@rails30/gems/kaminari-0.10.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] ruby-mysql (v2.9.4, /Users/jreddy/.rvm/gems/ruby-1.9.2-p0@rails30/gems/ruby-mysql-2.9.4)" level="application" />
   </component>
 </module>
 

@@ -9,7 +9,7 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: Orbital_dev
+  database: kaminari_development
   pool: 5
   username: root
   password:
