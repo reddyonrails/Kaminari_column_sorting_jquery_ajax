@@ -1,0 +1,24 @@
+<%= hidden_field_tag :direction, params[:direction] %>
+<%= hidden_field_tag :sort, params[:sort] %>
+<table>
+  <thead>
+  <tr>
+	<th><%= sortable "first_name" %></th>
+	<th><%= sortable "last_name" %></th>
+	<th></th>
+	<th></th>
+	<th></th>
+  </tr>
+  <thead>
+  <tbody id="subscribers">
+  <%= render @subscribers %>
+  <tbody>
+</table>
+
+<br/>
+
+<br><br>
+
+<div id="paginator">
+  <%= paginate @subscribers, :remote => true%>
+</div>
