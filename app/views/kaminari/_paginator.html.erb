@@ -1,12 +1,25 @@
 <style>
-.pagination{padding:.3em;margin:.3em; font: 13.34px helvetica,arial,freesans,clean,sans-serif;}
-.pagination a{padding:.1em .3em;margin:.2em;border:1px solid #aad;text-decoration:none;color:#369;}
-.pagination a:hover,.pagination a:active{border:1px solid #369;color:#000;}
-.pagination span.current{padding:.1em .3em;margin:.2em;border:1px solid #369;font-weight:bold;background-color:#369;color:#FFF;}
-.pagination span.disabled{padding:.1em .3em;margin:.2em;border:1px solid #eee;color:#ddd;}
+#nav a{display:block}
+#nav td{padding:0;text-align:center}
+.cur {font-weight:bold}
+.csb {background-color: lightblue ;height:1px;display:block}
+#nav {font-family: arial,sans-serif; font-size:small}
+#nav a:link {text-decoration:none; color:#4496d3}
+#nav a:hover {text-decoration:underline}
+#nav a:active {color:#c11}
+#nav a:visited {color:#2200C1}
+.b {font-weight:bold}
 </style>
 <%= paginator.render do -%>
-<div class="pagination"><%= current_page > 1 ? prev_link_tag : prev_span_tag -%>
-<%= num_pages > current_page ? next_link_tag : next_span_tag -%>
-</div>
-<% end -%>
+  <table id="nav" style="border-collapse:collapse;text-align:left;direction:ltr;margin:17px auto 0"><tbody><tr valign="top">
+<%=    current_page > 1 ? prev_link_tag : prev_span_tag -%>
+    <% each_page do |page| %>
+      <% if page.current? %>
+<%=        current_page_tag -%>
+      <% elsif page.inside_window? %>
+<%=        page_link_tag -%>
+      <% end %>
+    <% end %>
+<%=    num_pages > current_page ? next_link_tag : next_span_tag -%>
+</tr></tbody></table>
+<% end %>

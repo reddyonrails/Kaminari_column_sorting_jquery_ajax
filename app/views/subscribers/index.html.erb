@@ -1,5 +1,29 @@
 <%= hidden_field_tag :direction, params[:direction] %>
 <%= hidden_field_tag :sort, params[:sort] %>
+<style>
+  th {
+	font-family: arial, sans-serif;
+	font-size: small
+  }
+
+  th a:link {
+	text-decoration: none;
+	color: #4496d3
+  }
+
+  th a:hover {
+	text-decoration: underline
+  }
+
+  th a:active {
+	color: #c11
+  }
+
+  th a:visited {
+	color: #2200C1
+  }
+
+</style>
 <table>
   <thead>
   <tr>
@@ -19,6 +43,6 @@
 
 <br><br>
 
-<div id="paginator">
+<div id="paginator" style="float:left">
   <%= paginate @subscribers, :remote => true%>
 </div>
