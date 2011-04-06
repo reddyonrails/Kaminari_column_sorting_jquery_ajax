@@ -2,7 +2,7 @@ class SubscribersController < ApplicationController
   helper_method :sort_column, :sort_direction
 
   def index
-    @subscribers = Subscriber.order(sort_column + " " + sort_direction).page(params[:page]).per(2)
+    @subscribers = Subscriber.order(sort_column + " " + sort_direction).page(params[:page])
   end
 
   def show
