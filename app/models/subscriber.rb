@@ -1,3 +1,3 @@
 class Subscriber < ActiveRecord::Base
-  paginates_per 2
+  paginates_per 10
 end

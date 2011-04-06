@@ -5,8 +5,14 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
-Subscriber.create( [
-                    {:first_name => "jagan", :last_name => "reddy"},
-                    {:first_name => "reddy", :last_name => "jagan"},
-                    {:first_name => "jaganreddy", :last_name => "reddyjagan"},
-                    {:first_name => "reddyreddy", :last_name => "jaganjagan"},] )
+
+def make_subscribers
+  (100).times do |i|
+    Subscriber.create(
+        :first_name    => Faker::Name.first_name,
+        :last_name     => Faker::Name.last_name
+    )
+  end
+end
+
+make_subscribers

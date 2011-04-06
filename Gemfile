@@ -8,6 +8,7 @@ gem 'rails', '3.0.3'
 gem 'ruby-mysql'
 gem 'kaminari'
 gem 'jquery-rails'
+gem 'faker', '0.3.1'
 # Use unicorn as the web server
 # gem 'unicorn'
 
