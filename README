@@ -2,3 +2,5 @@ Please visit for original kaminari pagination plugin here.
 https://github.com/amatsuda/kaminari
 
 The above example code for column sorting through ajax calls when doing pagination.
+
+Better to use sorting image arrows for column heading for visual appealing
